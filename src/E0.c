@@ -25,8 +25,8 @@
 double phi;
 
 // modified screening length
-double k_q (double q) {
-  return sqrt (1./(LD*LD) + q*q);
+double k_q (double q, double lambda_D) {
+  return sqrt (1./(lambda_D*lambda_D) + q*q);
 }
 
 // angular modes of charge distribution
